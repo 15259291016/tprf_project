@@ -12,11 +12,11 @@
 <!--      <view class="grid-item yellow">
         校园动态
       </view> -->
-      <view class="grid-item pink">
+      <view class="grid-item pink" @click="goToCloudPage()">
         云上的植物
         <text class="small-text">高科技的远程种植</text> <!-- 增加小字 -->
       </view>
-      <view class="grid-item green">
+      <view class="grid-item green" @click="goToSidePage()">
         身边的植物
         <text class="small-text">已点亮966株植物</text> <!-- 增加小字 -->
       </view>
@@ -26,11 +26,11 @@
 <!--      <view class="grid-item dark-green">
         更多
       </view> -->
-      <view class="grid-item purple">
+      <view class="grid-item purple" @click="goToSmartPage()">
         智能设备
         <text class="small-text">学习编程 体验智慧农业</text> <!-- 增加小字 -->
       </view>
-      <view class="grid-item dark-green">
+      <view class="grid-item dark-green" @click="goToMessagePage()">
         留言互动
       </view>
     </view>
@@ -48,9 +48,29 @@
 			}
 		},
 		methods: {
+			goToCloudPage() {
+				uni.navigateTo({
+					url: '/pages/CloudPlants/CloudPlants' // 跳转的目标页面路径
+				});
+			},
+			goToSidePage() {
+				uni.navigateTo({
+					url: '/pages/sidePlant/sidePlant' // 跳转的目标页面路径
+				});
+			},
 			goToDetailPage() {
 				uni.navigateTo({
 					url: '/pages/index/index' // 跳转的目标页面路径
+				});
+			},
+			goToSmartPage() {
+				uni.navigateTo({
+					url: '/pages/smartDevice/smartDevice' // 跳转的目标页面路径
+				});
+			},
+			goToMessagePage() {
+				uni.navigateTo({
+					url: '/pages/leaveMessage/leaveMessage' // 跳转的目标页面路径
 				});
 			}
 		}

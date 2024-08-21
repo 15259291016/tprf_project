@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.page {
+  background: url("https://nongmo-plant.oss-cn-beijing.aliyuncs.com/dCloud/plugin-plant/bg.png") left bottom no-repeat;
+  background-size: 676rpx auto;
+  min-height: 100vh;
+}
+.page .ai-con {
+  background: url("https://nongmo-plant.oss-cn-beijing.aliyuncs.com/dCloud/plugin-plant/headerbg.png") right top no-repeat;
+  background-size: 676rpx auto;
+}
+.page .ai-con .temp {
+  margin: 0 auto;
+  width: 692rpx;
+  height: 476rpx;
+  border-radius: 36rpx;
+  overflow: hidden;
+  background: url("https://nongmo-plant.oss-cn-beijing.aliyuncs.com/weapp/nopic.png") center center no-repeat;
+  background-size: 232rpx auto;
+  position: relative;
+}
+.page .ai-con .temp .userpic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page .ai-con .temp .matchname {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  font-size: 34rpx;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  height: 84rpx;
+  font-size: 43rpx;
+  color: #fff;
+  line-height: 84rpx;
+  background: #65ba94;
+  border-radius: 36rpx;
+  opacity: 0.73;
+}
+.page .ai-con .temp .nopic-text {
+  bottom: 10rpx;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  font-size: 40rpx;
+  text-align: center;
+  padding: 20rpx;
+  color: #d0e0dd;
+}
+.page .ai-con .imgcon {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  margin: 0 auto;
+}
+.page .ai-con .loading {
+  text-align: center;
+}
+.page .airesult {
+  margin: 0 auto;
+  margin-top: 40rpx;
+  width: 692rpx;
+  background: #fff;
+  border-radius: 36rpx;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .airesult .loadingcon {
+  width: 100%;
+  text-align: center;
+  padding-top: 180rpx;
+  background: url("https://nongmo-plant.oss-cn-beijing.aliyuncs.com/weapp/loading.png") #fff center top no-repeat;
+  background-size: 200rpx auto;
+  color: #92b5ad;
+}
+.page .airesult .swiper {
+  width: 100%;
+  height: 303rpx;
+}
+.page .airesult .swiper .swiper-item {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20rpx 30rpx;
+}
+.page .airesult .swiper .swiper-item .avatar {
+  width: 284rpx;
+  height: 255rpx;
+  flex: 0 0 284rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: url("https://nongmo-plant.oss-cn-beijing.aliyuncs.com/weapp/nopic.png") #fff center center no-repeat;
+  background-size: 100% auto;
+}
+.page .airesult .swiper .swiper-item .intro {
+  width: 284rpx;
+  height: 228rpx;
+  color: #2a6456;
+  overflow: hidden;
+}
+.page .airesult .swiper .swiper-item .intro .hd {
+  font-size: 38rpx;
+}
+.page .airesult .swiper .swiper-item .intro .bd {
+  font-size: 24rpx;
+  line-height: 1.2;
+}
+.page .butcon {
+  margin: 0 auto;
+  text-align: center;
+}
+.page .butcon .btn {
+  height: 118rpx;
+  background: url("https://nongmo-plant.oss-cn-beijing.aliyuncs.com/dCloud/plugin-plant/button_bg.png") center center no-repeat;
+  background-size: auto 100%;
+  line-height: 110rpx;
+  color: #fff;
+}
+.page .butcon .btn .text {
+  padding-left: 14px;
+}
+
